@@ -21,7 +21,7 @@ function Experience(){
                     <motion.div variants={entry(0.3,-100)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }}  className="box">
                         <h4>2022-2023</h4>
                         <h3>Frontend Developer</h3>
-                        <p className="place">Delloite</p>
+                        <p className="place">Pawzz</p>
                         <p> I have acquired numerous technical & Designing skills throughout this journey. </p>
                     </motion.div>
                     <motion.div variants={entry(0.8,-100)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }}  className="box">
@@ -32,13 +32,13 @@ function Experience(){
                     </motion.div>
                 </div>
                 <div className="col">
-                    <motion.div variants={entry(0.8,100)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }}  className="box">
+                    <motion.div variants={entry(0.8,20)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }}  className="box">
                         <h4>2022-Present</h4>
                         <h3>Secretary</h3>
                         <p className="place">Computer Science Student's Council, BIET Jhansi</p>
                         <p> Honed in soft skills, Leadership & Strategic Thinking, which enhanced my communication and management skills.</p>
                     </motion.div>
-                    <motion.div variants={entry(0.3,100)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }}  className="box">
+                    <motion.div variants={entry(0.3,20)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }}  className="box">
                         <h4>2021-Present</h4>
                         <h3>Executive Member</h3>
                         <p className="place">Cultural Sub-Council, BIET Jhansi</p>

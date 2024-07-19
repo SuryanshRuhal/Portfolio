@@ -75,7 +75,6 @@ nav a {
 
   
       .name{
-        
         color: #f8c9ff;
         letter-spacing: 10px ;
       }
@@ -255,6 +254,7 @@ nav a {
   padding: 1rem;
   background: #050507;
   height:fit-content;
+  padding-bottom: 3rem;
   h2{
     margin-bottom: 5px;
   }
@@ -347,7 +347,7 @@ nav a {
  /* experience */
 .experiencecontainer{
   padding: 1rem;
-  overflow: scroll;
+  height: max-content;
   background: #050507;
   h1{
     font-size: 4rem;
@@ -853,7 +853,7 @@ nav a {
     font-size:2.5rem;
     color:white;
     margin-bottom:1rem;
-
+    text-align: center;
   }
   h4{
     font-size:1.8rem;
@@ -1201,6 +1201,11 @@ a{
   .logo {
     height: 50px;
     width: 241px;
+}
+.servicecontainer{
+    h1{
+    margin-top: 3.5rem;
+  }
 }
   .homecontainer {
     height: calc(100vh);

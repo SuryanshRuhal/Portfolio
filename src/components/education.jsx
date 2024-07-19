@@ -46,7 +46,7 @@ function Education(){
                         <p><span>Percentage: </span>94.6%</p>
                     </motion.div>
             </motion.div>
-            <motion.div variants={entry(0.5)} initial="initial" whileInView="animate" viewport={{ amount: 0.9}} className="timelineitem">
+            <motion.div variants={entry(0.5)} initial="initial" whileInView="animate" viewport={{ amount: 0.7}} className="timelineitem">
                 <div className="timeline-dot"></div>
                     <motion.div drag className="timelinedate">2017-2018</motion.div>
                     <motion.div className="timelinecontent" variants={imgvariant(1)} initial="initial" animate="animate">
