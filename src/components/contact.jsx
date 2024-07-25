@@ -3,6 +3,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import React, { useState} from "react";
 import {motion} from "framer-motion";
+import emailjs from '@emailjs/browser';
 function Content(){
     const [textinput, setinput]=useState({
         Name:"",
@@ -10,6 +11,11 @@ function Content(){
         Subject:"",
         Message:""
     });
+
+    const serviceid="service_7kpyfib";
+    const templateid="template_zo9pps6";
+    const publickey="lCC-8ZAow-9SLeOBN";
+    
 
     const disvariant=(delay)=>({
         offscreen:{
@@ -25,20 +31,30 @@ function Content(){
 
     function writeinput(event){
        const {name,value}= event.target;
-       setinput(()=>{
-        return{
+       setinput((prevInput)=>({
+        ...prevInput,
         [name]:value,
-        }
-       })
+       }))
     };
      
-    function sendinput(){
-        setinput({
-            Name:"",
-            Email:"",
-            Subject:"",
-            Message:"",
-        })
+    function sendinput(e){
+        e.preventDefault();
+       
+        const contactparams= {
+            from_name:textinput.Name,
+            to_name: "Suryansh Ruhal",
+            email_id: textinput.Email,
+            subject: textinput.Subject,
+            message:textinput.Message,
+        }
+        emailjs.send(serviceid, templateid, contactparams,publickey).then((Response)=>{
+            setinput({
+                Name:"",
+                Email:"",
+                Subject:"",
+                Message:"",
+            });
+        }); 
     }
     return( 
     <section id="contact" className="contactsection">
@@ -52,6 +68,7 @@ function Content(){
           col={20}
           rows={6}
           multiline
+          name="Message"
           value={textinput.Message} onChange={writeinput}
           placeholder="Message"
         />

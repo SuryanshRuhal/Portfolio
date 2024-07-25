@@ -75,7 +75,7 @@ function Projects(){
                             </motion.div>
                         </div>
                         <h2 className="projectheading">Summon</h2>
-                        <h4 className="projectdes"> A highly robust and efficient video chat application utilizing Node.js, Socket.IO, and WebRTC, successfully
+                        <h4 className="projectdes"> A highly robust and efficient video chat application utilizing Node.js, and Socket.IO successfully
                         supporting over 200 concurrent users while maintaining exceptionally low latency.</h4>
                         <div className="btngroup">
                             <motion.button className="btnp" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Read Here</motion.button>
