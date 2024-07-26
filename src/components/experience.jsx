@@ -34,7 +34,7 @@ function Experience(){
                 <div className="col">
                     <motion.div variants={entry(0.8,20)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }}  className="box">
                         <h4>2022-Present</h4>
-                        <h3>Secretary</h3>
+                        <h3>Executive Member</h3>
                         <p className="place">Computer Science Student's Council, BIET Jhansi</p>
                         <p> Honed in soft skills, Leadership & Strategic Thinking, which enhanced my communication and management skills.</p>
                     </motion.div>

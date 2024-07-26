@@ -1,7 +1,7 @@
 import { useState } from "react";
-import my from "../components/ME26.jpg";
+import img1 from "./Anu.jpg";
 import img3 from "../components/me24.jpg";
-import img4 from "../components/weatherappss.png";
+import img4 from "./lakshay.jpg";
 import img5 from "../components/Euphoniousvoicess.png";
 import img6 from "../components/Wisdomabodess.png";
 import img7 from "../components/avadhyavichintass.png";
@@ -9,8 +9,9 @@ import img8 from "../components/summonss.png";
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { motion } from "framer-motion";
-import imgn from "./me24.jpg";
-
+import img2 from "./me24.jpg";
+import img10 from "./ME26.jpg";
+import img9 from "./shubham.jpg";
 
 
 const ImageSlider = () => {
@@ -31,25 +32,29 @@ const ImageSlider = () => {
 
   const [startIndex, setStartIndex] = useState(0);
 
-  const images = [img4, img3, my, img5, img6, img7, img8, imgn];
+  const images = [img5, img3, img1, img4, img6, img7, img8, img2, img9, img10];
   const names = [
-    "Aryan Ruhal",
-    "Anubhav Gaur",
-    "Suryansh Ruhal",
-    "Lakshay Sharma",
-    "Mayank Sharma",
+    "Vedant Gupta",
     "Vibhor Kumar",
-    "Sakshi Ruhal",
-    "Prince Chaudhary",
+    "Anubhav Gaur",
+    "Lakshay Sharma",
+    "Arpit Sachan",
+    "Chandresh Prajapati",
+    "Umesh Patel",
+    "Vivek Kumar",
+    "Shubham Chauhan",
+    "Dhruv Agarwal",
   ];
   const content=[
     "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
     "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
+    "He is someone you can always rely on; he consistently meets expectations and never lets anyone down in his work. His exceptional work ethic and sheer discipline are truly commendable.",
+    "He has an exceptional Knack for Problem Solving. He can find solutions to challenge that comes his way making him indispensable",
+    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
+    "He approaches each task with maximum effort, completing work at pivotal moments. His exceptional developing and designing skills, paired with extensive field knowledge, yield remarkable results.",
     "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
     "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
+    "Suryansh is a full stack developer proficient in working with react js, node js, express , MongoDB etc. I personally admire your work bro.",
     "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
   ]
 
