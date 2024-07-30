@@ -44,7 +44,7 @@ const ImageSlider = () => {
     },
     {img:img1,
       name:"Anubhav Gaur",
-      content: "He is someone you can always rely on; he consistently meets expectations and never lets anyone down in his work. His exceptional work ethic and sheer commitment to discipline are truly commendable. ❤️",
+      content: "He is someone you can always rely on; he consistently meets expectations and never lets anyone down in his work. His exceptional work ethic and sheer commitment to discipline are truly commendable.",
     }, 
     {img:img4,
       name:"Lakshay Sharma",

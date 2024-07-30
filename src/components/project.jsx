@@ -201,22 +201,22 @@ function Projects(){
             </div>
             <div className="pcounter"ref={ref}>
                 <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard">
-                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <IoPeopleSharp style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
+                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <p className="cicon">🧑‍💼</p></motion.div>
                     <h3><Counter targetNumber={0}  /></h3>
                     <h5>Client</h5>
                 </motion.div>
                 <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard" >
-                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <FaBriefcase style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
+                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <p className="cicon">💼</p></motion.div>
                     <h3><Counter targetNumber={20}  /></h3>
                     <h5>Projects</h5>
                 </motion.div>
                 <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard" >
-                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <FcLikePlaceholder style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
+                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <p className="cicon">❤️</p> </motion.div>
                     <h3><Counter targetNumber={80} /></h3>
                     <h5>Likes</h5>
                 </motion.div>
                 <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard" >
-                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <RiEmotionLaughLine style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
+                <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <p className="cicon">😄</p></motion.div>
                 <h3><Counter targetNumber={500} /></h3>
                     <h5>Happy</h5>
                 </motion.div>
