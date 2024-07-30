@@ -47,8 +47,16 @@ section{
 nav a {
   text-decoration: none;
   color: white;
-  transition: color 0.3s;
+  transition: color 0.3s ease-in-out;
 }
+.activen{
+    color: #dc799f;
+    border-bottom: 2px solid #dc799f;
+}
+nav a:hover{
+  color: hotpink;
+}
+
 .item {
   display: inline-block;
   margin: 0 15px;
@@ -535,6 +543,7 @@ nav a {
     padding: 1rem;
     position: relative;
     background: #050507;
+    align-content: center;
     padding-top: 5rem;
   h3{
     margin-bottom: 2rem;
@@ -996,6 +1005,10 @@ a{
     color: white;
     gap:1rem;
   }
+  a:hover{
+    color:hotpink;
+    border-bottom: 2px solid hotpink;
+  }
 }
 .reach {
   text-align: center;
@@ -1092,7 +1105,7 @@ a{
     width: 35% !important;
   }
   .skillcontainer{
-    height:fit-content;
+    height: -webkit-fill-available;
   }
   .projectcontainer {
     display: flex;
@@ -1174,8 +1187,15 @@ a{
   .timeline-dot{
     left: 47.5%;
   }
+  .timelinecontent p {
+    font-size: 11px;
+  }
+  .timelinecontent h3 {
+    font-size: 16px;
+  }
   .timelinedate{
     background: #000000a3;
+    font-size: 22px;
     color: #e1afd1;
   }
 .timelinecontent {
@@ -1205,7 +1225,11 @@ a{
 .servicecontainer{
     h1{
     margin-top: 3.5rem;
+    font-size: 1.8rem;
   }
+}
+.eheading{
+  font-size: 2rem;
 }
   .homecontainer {
     height: calc(100vh);
@@ -1216,7 +1240,7 @@ a{
 }
 .aboutright {
   p {
-      font-size: 0.8rem
+      font-size: 0.7rem
 }
 }
 .details {
@@ -1228,7 +1252,7 @@ a{
 }
 .aboutsection {
   h1 {
-      font-size: 3.3rem;
+      font-size: 1.8rem;
     }
   }
   .homecontainer {
@@ -1242,12 +1266,12 @@ a{
           padding: 2rem;
       }
         h1 {
-          font-size: 2rem;
+          font-size: 1.8rem;
           margin-block-start: 0em;
           margin-block-end: 0em;
       }
       h2{
-          font-size: 1.2em;
+          font-size: 1.8em;
       }
     }
   .skillbar {
@@ -1259,6 +1283,11 @@ a{
   .skillbox{
     width: 55% !important;
   }
+  .techcontainer {
+    h1 {
+        font-size: 3.4rem;
+    }
+}
   .left1,
 .right1 {
   display: none;
@@ -1289,7 +1318,7 @@ a{
 }
 .projectsection {
   h1 {
-      font-size: 3rem;
+      font-size: 1.8rem;
   }
 }
 .btnicon {
@@ -1303,7 +1332,7 @@ a{
 }
 .experiencecontainer {
   h1 {
-      font-size: 3rem;
+      font-size: 1.8rem;
       text-align: center;
       margin: 3rem 0px;
   }
@@ -1313,7 +1342,12 @@ a{
 }
 .contactsection {
   h2 {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
+  }
+}
+.skillcontainer {
+  h3 {
+      font-size: 1.8rem;
   }
 }
 .contacth {

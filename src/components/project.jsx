@@ -37,7 +37,7 @@ function Projects(){
         const rounded = useTransform(count, Math.round);
 
         useEffect(() => {
-          const animation = animate(count, targetNumber, { duration: 2, delay:2});
+          const animation = animate(count, targetNumber, { duration: 2, delay:1});
       
           return animation.stop;
         }, [targetNumber, count]);
@@ -46,7 +46,7 @@ function Projects(){
       };
     return(
         <section id="projects" className="projectsection">
-            <motion.h1 initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}}>Projects</motion.h1>
+            <motion.h1 initial={{opacity:0.2, scale:0.2}} transition={{duration:1.5}} whileInView={{opacity:1, scale:1}}>Projects</motion.h1>
             <div className="projectcontainer">
                 <motion.div variants={entry(-100)} initial="initial" whileInView="animate" viewport={{amount:0.5}} className="projectcard project1">
                     <div className="projectno projectright">01</div>
@@ -200,22 +200,22 @@ function Projects(){
                 </motion.div>
             </div>
             <div className="pcounter"ref={ref}>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="pcard">
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard">
                 <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <IoPeopleSharp style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
                     <h3><Counter targetNumber={0}  /></h3>
                     <h5>Client</h5>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="pcard" >
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard" >
                 <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <FaBriefcase style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
                     <h3><Counter targetNumber={20}  /></h3>
                     <h5>Projects</h5>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="pcard" >
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard" >
                 <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <FcLikePlaceholder style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
                     <h3><Counter targetNumber={80} /></h3>
                     <h5>Likes</h5>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="pcard" >
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="pcard" >
                 <motion.div variants={imgvariant(4)} initial="initial" animate="animate"> <RiEmotionLaughLine style={{color:"#ffcdd2"}}className="cicon"/></motion.div>
                 <h3><Counter targetNumber={500} /></h3>
                     <h5>Happy</h5>

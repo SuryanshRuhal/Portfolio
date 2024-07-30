@@ -1,16 +1,17 @@
 import { useState } from "react";
 import img1 from "./Anu.jpg";
-import img3 from "../components/me24.jpg";
+import img3 from "./vibhor.jpg";
 import img4 from "./lakshay.jpg";
-import img5 from "../components/Euphoniousvoicess.png";
-import img6 from "../components/Wisdomabodess.png";
-import img7 from "../components/avadhyavichintass.png";
-import img8 from "../components/summonss.png";
+import img5 from "./vedant.png";
+import img6 from "./chandresh prajapati.jpg";
+import img7 from "./umesh.jpg";
+import img8 from "./vivek.jpg";
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { motion } from "framer-motion";
-import img2 from "./me24.jpg";
-import img10 from "./ME26.jpg";
+import img2 from "./arpit.jpg";
+import img10 from "./dhruv.jpg";
+import img11 from "./rss.jpg";
 import img9 from "./shubham.jpg";
 
 
@@ -32,31 +33,50 @@ const ImageSlider = () => {
 
   const [startIndex, setStartIndex] = useState(0);
 
-  const images = [img5, img3, img1, img4, img6, img7, img8, img2, img9, img10];
-  const names = [
-    "Vedant Gupta",
-    "Vibhor Kumar",
-    "Anubhav Gaur",
-    "Lakshay Sharma",
-    "Arpit Sachan",
-    "Chandresh Prajapati",
-    "Umesh Patel",
-    "Vivek Kumar",
-    "Shubham Chauhan",
-    "Dhruv Agarwal",
-  ];
-  const content=[
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "He is someone you can always rely on; he consistently meets expectations and never lets anyone down in his work. His exceptional work ethic and sheer discipline are truly commendable.",
-    "He has an exceptional Knack for Problem Solving. He can find solutions to challenge that comes his way making him indispensable",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "He approaches each task with maximum effort, completing work at pivotal moments. His exceptional developing and designing skills, paired with extensive field knowledge, yield remarkable results.",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    "Suryansh is a full stack developer proficient in working with react js, node js, express , MongoDB etc. I personally admire your work bro.",
-    "He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-  ]
+  const images = [
+    {img:img5,
+      name:"Vedant Gupta",
+      content:"He has a relentless dedication, patient nature, and his hard work are truly commendable.",
+    },
+    {img:img3,
+      name:"Vibhor kumar",
+      content:"He is an individual who effortlessly turns challenges into accomplishments.",
+    },
+    {img:img1,
+      name:"Anubhav Gaur",
+      content: "He is someone you can always rely on; he consistently meets expectations and never lets anyone down in his work. His exceptional work ethic and sheer commitment to discipline are truly commendable.",
+    }, 
+    {img:img4,
+      name:"Lakshay Sharma",
+      content: "He has an exceptional Knack for Problem Solving. He can find solutions to challenge that comes his way making him indispensable",
+    },
+    {img:img2,
+      name:"Arpit Sachan",
+      content: "Truly an incredible developer. The one with exceptional potential and willpower. A perfect blend of great logic and excellent designing skills.",
+    },
+    {img:img6,
+      name:"Chandresh Prajapati",
+      content:"He approaches each task with maximum effort, completing work at pivotal moments. His exceptional developing & designing skills, paired with extensive field knowledge, yield remarkable results.",
+    },
+    {img:img7,
+      name:"Umesh Patel",
+      content:"He is a technically skilled person with a calming and friendly demeanor that brings a positive influence to every interaction.",
+    },
+    {img:img8,
+      name:"Vivek kumar",
+      content:"He is an exceptional individual whose dedication and expertise shine in every endeavor.",
+    },
+    {img:img9,
+      name:"Shubham Chauhan",
+      content:"Suryansh is a full stack developer proficient in working with react js, node js, express , MongoDB etc. I personally admire your work bro.",
+    },
+    {img:img10,
+      name:"Dhruv Agarwal",
+      content:"He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
+    },{img:img11,
+      name:"Rohit S Sinha",
+      content:"He is a person who consistently delivers excellence with unwavering precision",
+    }];
 
   const positions = ["left2", "left1", "center", "right1", "right2"];
 
@@ -78,7 +98,7 @@ const ImageSlider = () => {
 
   return (
     <section className="testimonialsection">
-      <motion.h1 initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}}>Testimonials</motion.h1>
+      <motion.h1 initial={{opacity:0.2, scale:0.2}} transition={{duration:2}} whileInView={{opacity:1, scale:1}}>Testimonials</motion.h1>
       <motion.div 
       variants={cardVariants} initial="offscreen"
       whileInView="onscreen"
@@ -100,16 +120,16 @@ const ImageSlider = () => {
               <button className="imgbbtn" onClick={handleprev}>
                 <GrFormPrevious className="tesbtn"/>
               </button>
-            <img src={images[index]} alt={names[index]} className="imgslimg" />
+            <img src={images[index].img} alt={images[index].name} className="imgslimg" />
               <button className="imgbbtn" onClick={handlenext}>
                <MdNavigateNext className="tesbtn"/>
               </button>
             </div>
             
-            <h2 className="name">{names[index]}</h2>
+            <h2 className="name">{images[index].name}</h2>
             <h4 className="post">Web Developer</h4>
             <div className="contentbox">
-            <p className="content">{content[index]}</p>
+            <p className="content">{images[index].content}</p>
             </div>
             
           </motion.div>

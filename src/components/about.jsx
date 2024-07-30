@@ -38,19 +38,19 @@ function About(){
               <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}}  className="aboutright">
                 <p>A passionate assiduous and sagacious developer committed to leveraging my knowledge while striving continuously for improving my skills. I am seeking opportunities  to expand my learnings & expertise. I possess profound knowledge of Java, Javascript, Node, React.js, Material-UI, Framer-Motion,  HTML, CSS, Express, MongoDB and SQL. With a knack for creativity, problem-solving and an eye for detail & aesthetics, I aspire to create resonant websites. Let's collaborate to give your dream ideas the land of reality with my expertise.</p>
                 <div className="details">
-                    <motion.div variants={entry(1.8)} initial="initial" whileInView="animate" className="detailhead">
+                    <motion.div variants={entry(1.4)} initial="initial" whileInView="animate" className="detailhead">
                         <h2>Name: <span>Suryansh Ruhal</span></h2>
                     </motion.div>
-                    <motion.div variants={entry(2.2)} initial="initial" whileInView="animate" className="detailhead">
+                    <motion.div variants={entry(1.6)} initial="initial" whileInView="animate" className="detailhead">
                         <h2>Date Of Birth: <span>14 March 2003</span></h2>
                     </motion.div>
-                    <motion.div variants={entry(2.6)} initial="initial" whileInView="animate" className="detailhead">
+                    <motion.div variants={entry(1.8)} initial="initial" whileInView="animate" className="detailhead">
                         <h2>Address: <span>Shikarpur Compound, Bulandshahr</span></h2>
                     </motion.div>
-                    <motion.div variants={entry(3)} initial="initial" whileInView="animate" className="detailhead">
+                    <motion.div variants={entry(2.0)} initial="initial" whileInView="animate" className="detailhead">
                         <h2>Email: <span>suryanshruhal108@gmail.com</span></h2>
                     </motion.div>
-                    <motion.div variants={entry(3.4)} initial="initial" whileInView="animate" className="detailhead">
+                    <motion.div variants={entry(2.2)} initial="initial" whileInView="animate" className="detailhead">
                         <h2>Contact: <span>9452142894</span></h2>
                     </motion.div>
                 </div>

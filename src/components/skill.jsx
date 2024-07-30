@@ -86,8 +86,8 @@ function Skills(){
                 </motion.div>
                 <motion.div  initial="offscreen" whileInView="onscreen" variants={cardVariants} className="skillbar">
                     <div className="info">
-                        <p>Express.js</p>
-                        <p>70%</p>
+                        <p>Javascript</p>
+                        <p>80%</p>
                     </div>
                     <div className="bar">
                     <motion.span  initial={{ width: 0 }}whileInView={{width:"70%"}} transition={{ duration: 2 }}></motion.span>

@@ -11,7 +11,7 @@ function Softskill(){
         ease: [0, 0.71, 0.2, 1.01]
       }}>Professional Skills</motion.h3>
              <div className="techskillcontainer">
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="skillbox">
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="skillbox">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
                             <linearGradient id="GradientColor">
@@ -26,7 +26,7 @@ function Softskill(){
                         <small>Communication Skills</small>   
                     </div>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="skillbox">
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="skillbox">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
                             <linearGradient id="GradientColor">
@@ -41,7 +41,7 @@ function Softskill(){
                         <small>Statistical Analysis</small>   
                     </div>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="skillbox">
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="skillbox">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
                             <linearGradient id="GradientColor">
@@ -56,7 +56,7 @@ function Softskill(){
                         <small> Leadership</small>   
                     </div>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="skillbox">
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="skillbox">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
                             <linearGradient id="GradientColor">
@@ -71,7 +71,7 @@ function Softskill(){
                         <small>Assiduous</small>   
                     </div>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="skillbox">
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="skillbox">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
                             <linearGradient id="GradientColor">
@@ -86,7 +86,7 @@ function Softskill(){
                         <small>Strategic thinking</small>   
                     </div>
                 </motion.div>
-                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:3}} whileInView={{opacity:1, scale:1}} className="skillbox">
+                <motion.div initial={{opacity:0.2, scale:0.2}} transition={{duration:1}} whileInView={{opacity:1, scale:1}} className="skillbox">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
                             <linearGradient id="GradientColor">
