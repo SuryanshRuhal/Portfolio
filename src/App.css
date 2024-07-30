@@ -1225,7 +1225,17 @@ a{
 .servicecontainer{
     h1{
     margin-top: 3.5rem;
-    font-size: 1.8rem;
+  }
+}
+.textcontainer{
+  h2{
+    font-size: 1rem !important;
+  }
+  h3{
+    font-size: 0.85rem !important;
+  }
+  h1{
+    font-size: 1.5rem !important;
   }
 }
 .eheading{

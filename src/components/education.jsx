@@ -24,7 +24,13 @@ function Education(){
       <motion.section initial={{x:-50,opacity:0}}  whileInView={{x:0,opacity:1}} transition={{duration: 1 }} id="education" className="educationcontainer">
                     <motion.h1 initial={{x:30,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration: 1 }} className="eheading">Education</motion.h1>
         <motion.div  className="timeline-items">
-            <motion.div drag variants={entry(0.2)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }} className="timelineitem" >
+            <motion.div drag 
+            dragConstraints={{
+                top: -20,
+                left: -20,
+                right: 20,
+                bottom: 25,
+              }}variants={entry(0.2)} initial="initial" whileInView="animate" viewport={{ amount: 0.2 }} className="timelineitem" >
                 <div className="timeline-dot"></div>
                     <div  className="timelinedate">2021-Present</div>
                     <motion.div className="timelinecontent" variants={imgvariant(1)} initial="initial" animate="animate">
@@ -35,7 +41,13 @@ function Education(){
                         <p><span>CGPA: </span>8.2</p>
                     </motion.div>
             </motion.div>
-            <motion.div drag variants={entry(0.4)} initial={{x:20,opacity:0}} whileInView="animate" viewport={{ amount: 0.8 }} className="timelineitem">
+            <motion.div drag 
+            dragConstraints={{
+                top: -20,
+                left: -20,
+                right: 20,
+                bottom: 25,
+              }} variants={entry(0.4)} initial={{x:20,opacity:0}} whileInView="animate" viewport={{ amount: 0.8 }} className="timelineitem">
                     <div className="timeline-dot"></div>
                     <div  className="timelinedate">2019-2020</div>
                     <motion.div className="timelinecontent" variants={imgvariant(1)} initial="initial" animate="animate">
@@ -46,7 +58,12 @@ function Education(){
                         <p><span>Percentage: </span>94.6%</p>
                     </motion.div>
             </motion.div>
-            <motion.div drag variants={entry(0.2)} initial="initial" whileInView="animate" viewport={{ amount: 0.7}} className="timelineitem">
+            <motion.div drag dragConstraints={{
+                top: -20,
+                left: -20,
+                right: 20,
+                bottom: 25,
+              }} variants={entry(0.2)} initial="initial" whileInView="animate" viewport={{ amount: 0.7}} className="timelineitem">
                 <div className="timeline-dot"></div>
                     <div  className="timelinedate">2017-2018</div>
                     <motion.div className="timelinecontent" variants={imgvariant(1)} initial="initial" animate="animate">
