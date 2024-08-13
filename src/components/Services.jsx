@@ -14,7 +14,7 @@ const cardVariants= {
     onscreen: {
       opacity:1,
       y: 0,
-      rotate: -5,
+      rotate: [-10,0],
       transition: {
         type: "spring",
         bounce: 0.8,
