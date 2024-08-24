@@ -9,8 +9,6 @@ import img8 from "./vivek.jpg";
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { motion } from "framer-motion";
-import img2 from "./arpit.jpg";
-import img10 from "./dhruv.jpg";
 import img11 from "./rss.jpg";
 import img9 from "./shubham.jpg";
 
@@ -50,10 +48,6 @@ const ImageSlider = () => {
       name:"Lakshay Sharma",
       content: "He has an exceptional Knack for Problem Solving. He can find solutions to challenge that comes his way making him indispensable",
     },
-    {img:img2,
-      name:"Arpit Sachan",
-      content: "Truly an incredible developer. The one with exceptional potential and willpower. A perfect blend of great logic and excellent designing skills.",
-    },
     {img:img6,
       name:"Chandresh Prajapati",
       content:"He approaches each task with maximum effort, completing work at pivotal moments. His exceptional developing & designing skills, paired with extensive field knowledge, yield remarkable results.",
@@ -70,10 +64,7 @@ const ImageSlider = () => {
       name:"Shubham Chauhan",
       content:"Suryansh is a full stack developer proficient in working with react js, node js, express , MongoDB etc. I personally admire your work bro.",
     },
-    {img:img10,
-      name:"Dhruv Agarwal",
-      content:"He brings 100% to each project and get work done when it's needed the most. He has a deep understanding about his sphere, and delivers great results.",
-    },{img:img11,
+    {img:img11,
       name:"Rohit S Sinha",
       content:"He is a person who consistently delivers excellence with unwavering precision",
     }];
