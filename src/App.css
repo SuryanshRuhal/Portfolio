@@ -754,6 +754,9 @@ nav a:hover{
 .projectcard:hover .projectno {
   opacity: 1;
 }
+.project6{
+  background:url(../src/components/incendia\ s.png) no-repeat center center/cover;
+}
 .project1{
   background:url(../src/components/summonss.png) no-repeat center center/cover;
 }

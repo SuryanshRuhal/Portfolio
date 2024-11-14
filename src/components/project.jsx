@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { IoPeopleSharp } from "react-icons/io5";
-import { FcLikePlaceholder } from "react-icons/fc";
-import { RiReactjsLine,RiJavascriptFill,RiEmotionLaughLine } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { RiReactjsLine,RiJavascriptFill } from "react-icons/ri";
 import { SiMongodb,SiExpress,SiSocketdotio, SiWebrtc} from "react-icons/si";
-import { FaNodeJs,FaLink,FaHtml5,FaBriefcase,FaGithub,FaCss3} from "react-icons/fa";
+import { FaNodeJs,FaLink,FaHtml5,FaGithub,FaCss3} from "react-icons/fa";
 import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
 import { useRef } from "react";
 const imgvariant=(duration)=>({
@@ -48,9 +47,47 @@ function Projects(){
         <section id="projects" className="projectsection">
             <motion.h1 initial={{opacity:0.2, scale:0.2}} transition={{duration:1.5}} whileInView={{opacity:1, scale:1}}>Projects</motion.h1>
             <div className="projectcontainer">
-                <motion.div variants={entry(-100)} initial="initial" whileInView="animate" viewport={{amount:0.5}} className="projectcard project1">
+                <motion.div variants={entry(-100)} initial="initial" whileInView="animate" viewport={{amount:0.5}} className="projectcard project6">
                     <div className="projectno projectright">01</div>
                     <div className="projectdetails projectdetailright">
+                        <div className="projectskill">
+                            <motion.div variants={imgvariant(4)} initial="initial" animate="animate" >
+                                <FaHtml5 style={{ color: "#dd4b25" }} className="picon" />
+                            </motion.div>
+                            <motion.div variants={imgvariant(2)} initial="initial" animate="animate" >
+                                <RiJavascriptFill style={{ color: "#f7d723" }} className="picon" />
+                            </motion.div>
+                            <motion.div variants={imgvariant(2)} initial="initial" animate="animate" >
+                                <RiTailwindCssFill style={{ color: "#254bdd" }} className="picon" />
+                            </motion.div>
+                            <motion.div variants={imgvariant(5)} initial="initial" animate="animate" >
+                                <FaNodeJs style={{ color: "#90ca51" }} className="picon" />
+                            </motion.div>
+                            <motion.div variants={imgvariant(2.4)} initial="initial" animate="animate" >
+                                <RiReactjsLine style={{ color: "#61dafb" }} className="picon" />
+                            </motion.div>
+                            <motion.div variants={imgvariant(2.4)} initial="initial" animate="animate" >
+                                <SiExpress  className="picon" />
+                            </motion.div>
+                            <motion.div variants={imgvariant(2.4)} initial="initial" animate="animate" >
+                                <SiMongodb style={{color:"#00a940"}} className="picon" />
+                            </motion.div>
+                            <motion.div variants={imgvariant(2.4)} initial="initial" animate="animate" >
+                                <SiSocketdotio className="picon" />
+                            </motion.div>
+                        </div>
+                        <h2 className="projectheading"> Incendia </h2>
+                        <h4 className="projectdes">A full-stack social media app for users to follow/unfollow, post, like, comment & Chat, handling 10,000+ daily interactions</h4>
+                        <div className="btngroup">
+                            <motion.button className="btnp" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Read Here</motion.button>
+                             <motion.a href="https://github.com/SuryanshRuhal/Incendia" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><FaGithub className="btnicon"/></motion.a>
+                            <motion.a href="https://incendia-rho.vercel.app/" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><FaLink className="btnicon" /></motion.a>   
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div variants={entry(-100)} initial="initial" whileInView="animate" viewport={{amount:0.5}} className="projectcard project1">
+                    <div className="projectno projectleft">02</div>
+                    <div className="projectdetails projectdetailleft">
                         <div className="projectskill">
                             <motion.div variants={imgvariant(4)} initial="initial" animate="animate" >
                                 <FaHtml5 style={{ color: "#dd4b25" }} className="picon" />
@@ -85,8 +122,8 @@ function Projects(){
                     </div>
                 </motion.div>
                 <motion.div variants={entry(50)} initial="initial" whileInView="animate" viewport={{amount:0.5}}  className="projectcard project2">
-                    <div className="projectno projectleft">02</div>
-                    <div className="projectdetails projectdetailleft">
+                    <div className="projectno projectright">03</div>
+                    <div className="projectdetails projectdetailright">
                         <div className="projectskill">
                             <motion.div variants={imgvariant(4)} initial="initial" animate="animate" >
                                 <FaHtml5 style={{ color: "#dd4b25" }} className="picon" />
@@ -120,8 +157,8 @@ function Projects(){
                     </div>
                 </motion.div>
                 <motion.div variants={entry(-100)} initial="initial" whileInView="animate" viewport={{amount:0.5}} className="projectcard project3">
-                    <div className="projectno projectright">03</div>
-                    <div className="projectdetails projectdetailright">
+                    <div className="projectno projectleft">04</div>
+                    <div className="projectdetails projectdetailleft">
                         <div className="projectskill">
                             <motion.div variants={imgvariant(4)} initial="initial" animate="animate" >
                                 <FaHtml5 style={{ color: "#dd4b25" }} className="picon" />
@@ -146,8 +183,8 @@ function Projects(){
                     </div>
                 </motion.div>
                 <motion.div variants={entry(50)} initial="initial" whileInView="animate" viewport={{amount:0.5}} className="projectcard project4">
-                    <div className="projectno projectleft">04</div>
-                    <div className="projectdetails projectdetailleft">
+                    <div className="projectno projectright">05</div>
+                    <div className="projectdetails projectdetailright">
                         <div className="projectskill">
                             <motion.div variants={imgvariant(4)} initial="initial" animate="animate" >
                                 <FaHtml5 style={{ color: "#dd4b25" }} className="picon" />
@@ -173,8 +210,8 @@ function Projects(){
                     </div>
                 </motion.div>
                 <motion.div variants={entry(-100)} initial="initial" whileInView="animate" viewport={{amount:0.5}} className="projectcard project5">
-                    <div className="projectno projectright">05</div>
-                    <div className="projectdetails projectdetailright">
+                    <div className="projectno projectleft">06</div>
+                    <div className="projectdetails projectdetailleft">
                         <div className="projectskill">
                             <motion.div variants={imgvariant(4)} initial="initial" animate="animate" >
                                 <FaHtml5 style={{ color: "#dd4b25" }} className="picon" />
